@@ -3,9 +3,8 @@ import Images from '../components/common/Images'
 
 export default function Technologies() {
     return (
-        <section className='px-4 sm:px-10 py-10 bg-[#FBFBFB] rounded-b-[70px]'>
-            <div className="flex justify-center">
-            <div className='grid grid-cols-4 sm:grid-cols-7 xl:grid-cols-10 gap-y-16 w-full'>
+        <section className='px-4 sm:px-10 pt-10 pb-14 sm:py-10 bg-[#FBFBFB] rounded-b-[70px]'>
+            <div className='grid grid-cols-6 sm:grid-cols-7 xl:grid-cols-10 gap-y-16 w-full'>
                 <Images
                     src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
                     alt='Java logo'
@@ -86,7 +85,6 @@ export default function Technologies() {
                     src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg'
                     alt='Jira logo'
                 />
-            </div>
             </div>
         </section>
     )
