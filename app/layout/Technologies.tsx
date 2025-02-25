@@ -1,9 +1,16 @@
+"use client"
 import React from 'react'
 import Images from '../components/common/Images'
+import { motion } from "framer-motion";
 
 export default function Technologies() {
     return (
         <section className='px-4 sm:px-10 pt-10 pb-14 sm:py-10 bg-[#FBFBFB] rounded-b-[70px]'>
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: false }} >
             <div className='grid grid-cols-6 sm:grid-cols-7 xl:grid-cols-10 gap-y-16 justify-items-center'>
                 <Images
                     src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
@@ -86,6 +93,7 @@ export default function Technologies() {
                     alt='Jira logo'
                 />
             </div>
+            </motion.div>
         </section>
     )
 }
