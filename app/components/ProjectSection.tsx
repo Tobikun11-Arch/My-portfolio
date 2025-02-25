@@ -76,7 +76,7 @@ export default function ProjectSection({ icon, title, imgsrc, alt, imgAlt, logo1
                     placeholder='blur'
                 />
            </div>
-           <div className='pt-2 pb-4 px-4 flex flex-col gap-2'>
+           <div className='pt-2 pb-4 px-4 flex flex-col gap-4 sm:gap-2'>
                 <div className='flex gap-3'>
                     <TechnologiesLogo logo={logo1} logoAlts={logo1Alt}/>
                     <TechnologiesLogo logo={logo2} logoAlts={logo2Alt}/>
