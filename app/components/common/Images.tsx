@@ -10,7 +10,7 @@ export default function Images({ src, alt }: ImageProps) {
     return (
         <div className='w-10 h-10 sm:w-16 sm:h-16 relative'>
             <Image
-                layout='fill'
+                fill
                 src={src}
                 alt={alt}
                 loading='lazy'

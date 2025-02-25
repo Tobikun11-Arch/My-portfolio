@@ -5,7 +5,7 @@ export default function ProfileSection() {
     return (
         <div className='w-24 h-24 rounded-full overflow-hidden relative'>
             <Image
-                layout='fill'
+                fill
                 src={'/my_profile.jpg'}
                 alt='My profile'
                 loading='lazy'

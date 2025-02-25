@@ -4,7 +4,7 @@ import Images from '../components/common/Images'
 export default function Technologies() {
     return (
         <section className='px-4 sm:px-10 pt-10 pb-14 sm:py-10 bg-[#FBFBFB] rounded-b-[70px]'>
-            <div className='grid grid-cols-6 sm:grid-cols-7 xl:grid-cols-10 gap-y-16 w-full'>
+            <div className='grid grid-cols-6 sm:grid-cols-7 xl:grid-cols-10 gap-y-16 justify-items-center'>
                 <Images
                     src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
                     alt='Java logo'
@@ -46,7 +46,7 @@ export default function Technologies() {
                     alt='Tailwind css logo'
                 />
                  <Images
-                    src='https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg'
+                    src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg'
                     alt='Go language logo'
                 />
                 <Images
