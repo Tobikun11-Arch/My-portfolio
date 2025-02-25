@@ -19,7 +19,7 @@ export default function Header() {
     };
 
     return (
-        <header className="absolute top-0 left-0 w-full pt-4 px-2 sm:px-8 flex justify-between items-center bg-transparent text-sm font-semibold text-gray-600">
+        <header className="absolute top-0 left-0 w-full pt-4 px-4 sm:px-8 flex justify-between items-center bg-transparent text-sm font-semibold text-gray-600">
             <div className='text-[10px] sm:text-sm flex items-center gap-3 sm:gap-6 bg-white/15 rounded-xl py-1 pl-3 pr-1'>
                 <p>{email}</p>
                 <Button onClick={handleCopy}>{copied ? 'Copied!' : 'Copy'}</Button>
