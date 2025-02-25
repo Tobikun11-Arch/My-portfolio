@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Joenel | Full-Stack Developer Portfolio",
     description: "Explore my projects, skills, and journey in web development.",
-    url: "joenel.vercel.app", 
+    url: "https://www.joenelsev.com/", 
     type: "website",
     images: [
       {
-        url: "/portfolio-logo.png", // Social media preview image (1200x630 recommended)
+        url: "", // Social media preview image (1200x630 recommended)
         width: 1200,
         height: 630,
         alt: "Joenel's Portfolio Preview",
