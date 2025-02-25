@@ -35,10 +35,10 @@ export default function CtaSection() {
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=639934300300" target="_blank" className="btn whatsapp-btn shadow-lg text-black text-sm px-6 py-3 rounded-3xl">WhatsApp</a>
                 </div>
+            </motion.div>
                 <footer className='absolute bottom-4 left-4 text-xs text-gray-500'>
                 <p>© {new Date().getFullYear()} All rights reserved.</p>
                 </footer>
-            </motion.div>
         </main>
     )
 }
