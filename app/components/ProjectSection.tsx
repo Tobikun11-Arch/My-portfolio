@@ -39,15 +39,32 @@ export default function ProjectSection({ icon, title, imgsrc, alt, imgAlt, logo1
         const url = routes[title];
         
         if (url) {
-            window.open(url, "_blank"); // Opens in a new tab
+            window.open(url, "_blank"); 
         } else {
             console.error("Live demo URL not found for:", title);
         }
     }
     
+    function handleReadMe() {
+        const routes: Record<string, string> = {
+            "Sajuu-Bazaar": "https://github.com/Tobikun11-Arch/Online-Marketplace",
+            "Ass Tech": "https://github.com/Tobikun11-Arch/AssTech",
+            "Drizzy Movie": "https://github.com/Tobikun11-Arch/Drizzy-Db",
+            "Vaccination.ng": "https://github.com/Tobikun11-Arch/Vaccination.ng-Landing-page",
+            "NoobNet": "https://github.com/Tobikun11-Arch/NoobNet"
+        };
+    
+        const url = routes[title];
+        
+        if (url) {
+            window.open(url, "_blank"); 
+        } else {
+            console.error("Live demo URL not found for:", title);
+        }
+    }
 
     return (
-        <div className='w-full h-96 bg-[#EEEEEC] shadow-md rounded-lg'>
+        <div className='w-full h-96 bg-[#EEEEEC] shadow-md rounded-lg relative'>
            <div className='relative w-full h-3/4 rounded-t-lg overflow-hidden group'>
                 <Image
                     fill
@@ -59,7 +76,7 @@ export default function ProjectSection({ icon, title, imgsrc, alt, imgAlt, logo1
                     placeholder='blur'
                 />
            </div>
-           <div className='pt-2 pb-4 px-4 flex flex-col gap-4'>
+           <div className='pt-2 pb-4 px-4 flex flex-col gap-2'>
                 <div className='flex gap-3'>
                     <TechnologiesLogo logo={logo1} logoAlts={logo1Alt}/>
                     <TechnologiesLogo logo={logo2} logoAlts={logo2Alt}/>
@@ -85,6 +102,20 @@ export default function ProjectSection({ icon, title, imgsrc, alt, imgAlt, logo1
                     <button className='bg-black text-white text-xs sm:text-sm font-semibold font-mono flex justify-center items-center py-1.5 px-4 rounded-xl' onClick={handleLiveDemo}>Live Demo</button>
                </div>
            </div>
+           <div className='absolute bottom-16 right-4'>
+            <div className='relative w-7 h-7 rounded-full'>
+                    <Image
+                        fill
+                        alt='Github Logo'
+                        src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'
+                        loading='lazy'
+                        className='object-cover'
+                        blurDataURL={`${blurData}`}
+                        placeholder='blur'
+                        onClick={handleReadMe}
+                    />
+                </div>
+            </div>
         </div>
     )
 }
