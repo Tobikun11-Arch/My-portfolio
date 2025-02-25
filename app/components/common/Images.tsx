@@ -16,7 +16,7 @@ export default function Images({ src, alt }: ImageProps) {
                 loading='lazy'
                 blurDataURL="data:image/svg+xml;base64,..."
                 placeholder='blur'
-                objectFit='cover'
+                className='object-cover'
             />
         </div>
     )

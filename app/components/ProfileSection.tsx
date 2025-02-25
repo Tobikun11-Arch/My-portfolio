@@ -11,7 +11,7 @@ export default function ProfileSection() {
                 loading='lazy'
                 blurDataURL="data:image/svg+xml;base64,..."
                 placeholder='blur'
-                objectFit='cover'
+                className='object-cover'
             />
         </div>
     )
