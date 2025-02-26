@@ -19,8 +19,10 @@ export default function Profile() {
                     <h1 className='sm:mt-3'>authentication.</h1>
                 </div>
                 <button className="relative overflow-hidden bg-black text-white font-semibold py-3 w-36 mt-5 rounded-2xl group">
-                    <span className="relative z-10 flex justify-center items-center gap-1">Resume <Download size={20}/></span>
-
+                    <a href="/Joenel_F._Sevellejo_Resume.pdf" download="Joenel Sevellejo Resume">
+                        <span className='relative z-10 flex justify-center items-center gap-1'>Resume <Download size={20}/></span>
+                    </a>
+                    
                     {/* Hover effect */}
                     <span className="absolute inset-0 bg-blue-600 transition-all duration-500 ease-out transform -translate-x-full group-hover:translate-x-0"></span>
                 </button>
