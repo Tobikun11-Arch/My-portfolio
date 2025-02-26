@@ -22,8 +22,7 @@ export default function Profile() {
                     <a href="/Joenel_F._Sevellejo_Resume.pdf" download="Joenel Sevellejo Resume">
                         <span className='relative z-10 flex justify-center items-center gap-1'>Resume <Download size={20}/></span>
                     </a>
-                    
-                    {/* Hover effect */}
+
                     <span className="absolute inset-0 bg-blue-600 transition-all duration-500 ease-out transform -translate-x-full group-hover:translate-x-0"></span>
                 </button>
             </Motion>
