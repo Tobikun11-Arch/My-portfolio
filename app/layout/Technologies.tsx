@@ -92,6 +92,14 @@ export default function Technologies() {
                     src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg'
                     alt='Jira logo'
                 />
+                <Images
+                    src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg'
+                    alt='Prisma logo'
+                />
+                <Images
+                    src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg'
+                    alt='Postgresql logo'
+                />
             </div>
             </motion.div>
         </section>

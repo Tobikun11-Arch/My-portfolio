@@ -8,7 +8,7 @@ interface ImageProps{
 
 export default function Images({ src, alt }: ImageProps) {
     return (
-        <div className='w-10 h-10 sm:w-16 sm:h-16 relative'>
+        <div className='w-8 h-8 sm:w-16 sm:h-16 relative'>
             <Image
                 fill
                 src={src}
