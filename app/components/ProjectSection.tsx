@@ -60,7 +60,7 @@ export default function ProjectSection({ icon, title, imgsrc, alt, imgAlt, logo1
             window.open(url, "_blank"); 
         } else {
             console.error("Live demo URL not found for:", title);
-            //wrong
+            //wrongs
         }
     }
 
